@@ -25,7 +25,18 @@ function App() {
       <div className=" m-0  min-h-screen bg-black lg:p-20 h-{100%} w-full">
         <SearchBar onSearch={(query) => handleSearch(query)} />
         <Routes>
-          <Route path="/" exact element={
+          <Route path="/" element={
+            <>
+              <MovieList movies={movies} />
+              <Pagination
+                currentPage={currentPage}
+                totalResults={totalResults}
+                pageSize={8}
+                onPageChange={(page) => handleSearch(query, page)}
+              />
+            </>
+          } />
+          <Route path="/movie-search-app/" element={
             <>
               <MovieList movies={movies} />
               <Pagination
