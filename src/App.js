@@ -36,7 +36,7 @@ function App() {
               />
             </>
           } />
-          <Route path="/movie-search-app/" element={
+          <Route path="/movie-search-app" element={
             <>
               <MovieList movies={movies} />
               <Pagination
