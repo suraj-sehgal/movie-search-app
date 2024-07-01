@@ -24,7 +24,7 @@ const Pagination = ({ currentPage, totalResults, pageSize, onPageChange }) => {
   };
 
   return (
-    <div className="flex text-blue-50 pb-10 justify-center mt-4">
+    <div className="flex flex-wrap text-blue-50 pb-10 justify-center mt-4">
       {renderPageNumbers()}
     </div>
   );

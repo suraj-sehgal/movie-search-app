@@ -2,6 +2,7 @@
   "name": "movie-search-app",
   "version": "0.1.0",
   "homepage": "https://suraj_sehgal.github.io/movie-search-app",
+
   "private": true,
   "dependencies": {
     "react": "^18.3.1",
@@ -10,12 +11,10 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"  
   },
   "eslintConfig": {
     "extends": [
